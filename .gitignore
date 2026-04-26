@@ -9,7 +9,6 @@ build/
 cmake-build-*/
 
 # IDEs
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -22,3 +21,12 @@ Thumbs.db
 *
 !*/
 !*.*
+
+# Archivos marcados explícitamente para no subir
+*_NOSUBIR.*
+
+# .vscode al final: la regla "!*/" de arriba re-incluye todos los
+# directorios, así que la exclusión de .vscode tiene que venir después
+# para que tenga la última palabra.
+.vscode/
+**/.vscode/
