@@ -3,6 +3,7 @@
 Usuarios de GitHub de los participantes de Informática II.
 
 ### 2026
+=======
 
 - sfweber
 - NicolasRodriguez12
@@ -21,11 +22,15 @@ Usuarios de GitHub de los participantes de Informática II.
 - tcatinello
 - DaianaMedoneAcosta
 - VZ326
+- ARodriguez067
 - bcrrica
 - lucascerbino-sudo
 - Lucianodguerra
 - Elian-Ortiz
 - Francisco-Casale
 - FacundoJGil
-  
--estebanlukja
+- LautaroCasco
+- MariselHumana
+- nahuel1986
+- Lautaa-ctrl
+- estebanlukja
