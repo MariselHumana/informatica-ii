@@ -36,14 +36,13 @@ double rf (double (*pf)(double), double a , double b , double error, int maxIter
     double fa = pf(a);
     double fb = pf(b);
     double x, fx;
+    int flagConvergencia = 0;
 
     if (fa*fb > 0)
     {
         printf ("El intervalo no garantiza raiz.\n");
         return NAN;
     }
-
-    int flagConvergencia = 0;
 
     for (int i=0; i<maxIter && !flagConvergencia; i++)
     {

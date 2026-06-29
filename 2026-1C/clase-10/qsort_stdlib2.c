@@ -7,15 +7,7 @@ typedef struct {
     int edad;
 } Persona;
 
-/* Ordena por edad (ascendente).
-   El void * apunta directamente a una Persona, asi que se castea
-   a (const Persona *) y se accede al campo con ->. */
-int comparar_edad(const void *a, const void *b)
-{
-    const Persona *p1 = (const Persona *)a;
-    const Persona *p2 = (const Persona *)b;
-    return (p1->edad > p2->edad) - (p1->edad < p2->edad);
-}
+int comparar_edad(const void *, const void *);
 
 int main()
 {
@@ -36,4 +28,14 @@ int main()
         printf("%-10s %d\n", personas[i].nombre, personas[i].edad);
 
     return 0;
+}
+
+/* Ordena por edad (ascendente).
+   El void * apunta directamente a una Persona, asi que se castea
+   a (const Persona *) y se accede al campo con ->. */
+int comparar_edad(const void *a, const void *b)
+{
+    const Persona *p1 = (const Persona *)a;
+    const Persona *p2 = (const Persona *)b;
+    return (p1->edad > p2->edad) - (p1->edad < p2->edad);
 }

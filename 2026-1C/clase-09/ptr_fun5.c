@@ -1,19 +1,12 @@
 #include <stdio.h>
 
-int suma (int a, int b)
-{
-    return a + b ;
-}
-
-int opuesto (int a)
-{
-    return -a;
-}
-
 // Definicion del tipo de puntero a funcion que recibe dos int y devuelve int
 typedef int (*opBinaria)(int, int);
 // Definicion del tipo de puntero a funcion que recibe int y devuelve int
 typedef int (*opUnaria) (int);
+
+int suma (int, int);
+int opuesto (int);
 
 int main(void)
 {
@@ -30,4 +23,14 @@ int main(void)
 
     getchar();
     return 0;
+}
+
+int suma (int a, int b)
+{
+    return a + b ;
+}
+
+int opuesto (int a)
+{
+    return -a;
 }

@@ -31,10 +31,10 @@
 * **qsort_stdlib1.c** — `qsort` sobre enteros, ascendente y descendente con dos comparadores. Usa la forma segura `(x>y)-(x<y)`.
   Probar: compilar y ver las dos salidas; invertir el comparador y comprobar el orden.
 
-* **qsort_stdlib2.c** — `qsort` sobre un arreglo de `struct`, ordenado por un campo (la edad).
+* **qsort_stdlib2.c** — `qsort` sobre un vector de `struct`, ordenado por un campo (la edad).
   Probar: compilar y cambiar el comparador para ordenar por otro campo.
 
-* **qsort_stdlib3.c** — `qsort` sobre un arreglo de cadenas: doble desreferencia (`char**`) y `strcmp`.
+* **qsort_stdlib3.c** — `qsort` sobre un vector de cadenas: doble desreferencia (`char**`) y `strcmp`.
   Probar: compilar y verificar el orden alfabético.
 
 **Tema:** Comparación de rendimiento

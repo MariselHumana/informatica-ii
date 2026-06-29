@@ -1,18 +1,9 @@
-/* qsort con cadenas (arreglo de char *) */
+/* qsort con cadenas (vector de char *) */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-/* OJO: cada elemento del arreglo es un char *, asi que el void *
-   apunta a un char *. Por eso se castea a (const char **) y se
-   desreferencia una vez para obtener el char * real.
-   strcmp ya devuelve negativo / cero / positivo, justo lo que qsort espera. */
-int comparar_str(const void *a, const void *b)
-{
-    const char *s1 = *(const char **)a;
-    const char *s2 = *(const char **)b;
-    return strcmp(s1, s2);
-}
+int comparar_str(const void *, const void *);
 
 int main()
 {
@@ -27,4 +18,15 @@ int main()
         printf("%s\n", nombres[i]);
 
     return 0;
+}
+
+/* OJO: cada elemento del vector es un char *, asi que el void *
+   apunta a un char *. Por eso se castea a (const char **) y se
+   desreferencia una vez para obtener el char * real.
+   strcmp ya devuelve negativo / cero / positivo, justo lo que qsort espera. */
+int comparar_str(const void *a, const void *b)
+{
+    const char *s1 = *(const char **)a;
+    const char *s2 = *(const char **)b;
+    return strcmp(s1, s2);
 }
