@@ -19,6 +19,8 @@
 
 * **formato_FSM.c** — **Plantilla** (molde) de FSM con `switch`+`enum`. Es un esqueleto para completar (definís vos los estados y la condición de salida).
 
+* **formato_FSM_ptr.c** — **Plantilla** (molde) de FSM con **punteros a función** (la estructura de `ejemplo5.c`, vaciada). Esqueleto para completar: definís vos las funciones `state_0()…state_n()` y la condición de salida (por eso el molde solo compila pero no linkea).
+
 * **enum1.c** / **enum2.c** — Demos de `enum` (prerequisito): constantes simbólicas y sus valores enteros.
 
 > Los programas leen del teclado y terminan con **EOF**: `Ctrl+D` (Linux) / `Ctrl+Z`+Enter (Windows), o pipeando la entrada (`echo "abcd" | ./prog`).
